@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <script src="signup.js">
+       
+    </script>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" type="text/css" href="neon.css">
+   
+    <link rel="icon" type="image/png" sizes="32*32" href="image\user1.png">
+    <script src="jquery-3.3.1.js">
+         </script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+</head>
+
+<body onload="generate()">
+  
+
+    <div id="container">
+
+
+
+  <p><span id="s1">
+
+  </span>
+  <br>
+
+
+  </div>
+
+<br>
+    <div class="signupbox">
+
+        
+        <br>
+		<center><h2>SIGNUP </h2></center>
+        <br>
+            <table id="signup">
+                <tr>
+               <td><label>Name:</label></td>
+            
+                <td><input type="text"  id="t1" ></td>
+                </tr>
+				
+				 <tr>
+               <td><label>Username:</label></td>
+            
+                <td><input type="text"  id="t1" ></td>
+                </tr>
+				
+				
+            <tr>
+               <td> <label>Gender:</label></td>
+            <td> <span id="r1">
+             <input type="radio" name="gender" value="Male" >Male
+              <input type="radio" name="gender" value="Female" >Female
+            
+              </td>
+        </tr>
+             <tr>
+               <td><label>Email:</label>
+            <td><input  type="email" id="t2" ></td>
+        </tr>
+            <tr>
+               <td><label>Password:</label></td>
+            <td><input  type="password"  id="p1" >
+        </td></tr>
+            
+            <tr>
+               <td><label>Date Of Birth:</label></td>
+            
+        </tr>
+            
+      </select>
+
+            </td>
+        </tr>
+        
+    </table>
+
+
+    <br>
+           
+            <center><input type="submit" class="b2" onclick="validate()"  value="Sign Up"></center>
+            <br>
+           <center><h1></h1><a href="login.html"> Login here</a>  </center>
+            <br>
+            <br>
+    </div>
+   
+    </form>
+    <div id="help">
+    <div id="menu">
+    Need Help? 
+    <button id="closebot" onclick="quit()">X</button>
+    </div>
+         <iframe id="chatbot"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/5ac0c4c7-ddfb-4ce1-af3e-db9214905ac1">
+</iframe>
+    </div>
+    <div id="overlay" >
+    <button onclick="off()" id="close" onmouseover="show()" onmouseout="hide()">X</button>
+    <div id="closemsg">Click Here To Close</div>
+    <div id="info">
+     <table>
+ <caption>User's Information</caption>
+<tr> <td rowspan="6"><img src="#" id="userimage"  /></td></tr>
+ <tr> <td><label class="tit">Name:</label></td><td><label id="l1" > </label></td></tr>
+ <tr> <td><label class="tit">Born On:</label></td><td><label id="l2"> </label></td></tr>
+ <tr> <td><label class="tit">Gender:</label></td><td><label id="l4"> </label></td></tr>
+ <tr> <td><label class="tit">Email:</label></td><td><label id="l5"> </label></td></tr>
+ 
+    </table>
+    <button id="proceed" onclick="proceed()"> Proceed </button>
+    </div>
+    
+
+</div>
+    
+
+</body>
+
+
+</html>
